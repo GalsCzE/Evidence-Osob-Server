@@ -61,7 +61,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Entity\User.cs" />
+    <Compile Include="Interface\IParser.cs" />
     <Compile Include="Interface\IWebClient.cs" />
+    <Compile Include="Jsson\JsonParse.cs" />
     <Compile Include="WebClient\Task.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

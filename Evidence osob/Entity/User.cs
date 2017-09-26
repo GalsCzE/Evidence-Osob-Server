@@ -12,7 +12,7 @@ namespace Evidence_osob.Entity
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Birth_number { get; set; }
-        public int Date_number { get; set; }
+        public DateTime Date_number { get; set; }
         public string Gender { get; set; }
 
         public override string ToString()
