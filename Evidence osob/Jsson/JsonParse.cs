@@ -9,7 +9,11 @@ using Evidence_osob.Interface;
 
 namespace Evidence_osob.Jsson
 {
-    class JsonParse
+    class JsonParse : IParser
     {
+        public async Task<T> ParseStringAsync<T>(string response)
+        {
+            return await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<T>(response));
+        }
     }
 }
