@@ -42,5 +42,15 @@ namespace Evidence_osob
                 IParser parser = new JsonParse();
                 MistView.ItemsSource = await parser.ParseStringAsync<List<User>>(response.Content);
             }
+
+        private void Addd_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -9,8 +9,8 @@
     <Grid>
 
         <StackPanel>
-            <Button Height="30" Content="Add" x:Name="Addd" />
-            <Button Height="30" x:Name="Edit" Content="Edit"/>
+            <Button Height="30" Content="Add" x:Name="Addd" Click="Addd_Click" />
+            <Button Height="30" x:Name="Edit" Content="Edit" Click="Edit_Click" />
             <ListView x:Name="MistView" Height="608"/>
         </StackPanel>
     </Grid>
