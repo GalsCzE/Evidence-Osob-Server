@@ -74,11 +74,18 @@
     <Compile Include="Added.xaml.cs">
       <DependentUpon>Added.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Edited.xaml.cs">
+      <DependentUpon>Edited.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Entity\User.cs" />
     <Compile Include="Interface\IParser.cs" />
     <Compile Include="Interface\IWebClient.cs" />
     <Compile Include="Jsson\JsonParse.cs" />
     <Page Include="Added.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edited.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
