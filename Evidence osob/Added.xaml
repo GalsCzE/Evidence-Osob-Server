@@ -20,7 +20,7 @@
         <Label Content="Rodné číslo" HorizontalAlignment="Left" Margin="25,195,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Datum narození" HorizontalAlignment="Left" Margin="25,237,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Pohlavíl" HorizontalAlignment="Left" Margin="25,279,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Button Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,349,0,0" Width="478" />
-        <Button Content="BACK" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,369,0,0" Width="478" />
+        <Button x:Name="ad" Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,349,0,0" Width="478" Click="ad_Click" />
+        <Button x:Name="back" Content="BACK" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,369,0,0" Width="478" Click="back_Click" />
     </Grid>
 </Page>

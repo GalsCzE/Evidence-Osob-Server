@@ -24,5 +24,20 @@ namespace Evidence_osob
         {
             InitializeComponent();
         }
+
+        private void ba_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void de_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ed_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

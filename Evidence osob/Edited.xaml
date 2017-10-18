@@ -20,8 +20,8 @@
         <Label Content="Rodné číslo" HorizontalAlignment="Left" Margin="25,195,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Datum narození" HorizontalAlignment="Left" Margin="25,237,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Pohlavíl" HorizontalAlignment="Left" Margin="25,279,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Button Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,349,0,0" Width="478" />
-        <Button Content="DELETE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,369,0,0" Width="478" />
-        <Button Content="BACK" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,389,0,0" Width="478" />
+        <Button x:Name="ed" Content="EDIT" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,349,0,0" Width="478" Click="ed_Click" />
+        <Button x:Name="de" Content="DELETE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,369,0,0" Width="478" Click="de_Click" />
+        <Button x:Name="ba" Content="BACK" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,389,0,0" Width="478" Click="ba_Click" />
     </Grid>
 </Page>
