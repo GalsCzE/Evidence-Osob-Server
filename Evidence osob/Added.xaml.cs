@@ -1,22 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Evidence_osob.Jsson;
-using Evidence_osob.Interface;
-using Newtonsoft.Json;
-using RestSharp;
 using Evidence_osob.Entity;
+using System.Net.Http;
 
 namespace Evidence_osob
 {
@@ -25,20 +14,70 @@ namespace Evidence_osob
     /// </summary>
     public partial class Added : Page
     {
+        //private static readonly HttpClient _Client = new HttpClient();
+        //private static JavaScriptSerializer _Serializer = new JavaScriptSerializer();
         public Added()
         {
             InitializeComponent();
         }
 
-        private void ad_Click(object sender, RoutedEventArgs e)
+        static async Task Run()
         {
             string url = "https://student.sps-prosek.cz/~sevcima14/4ITB/Insert.php";
-            //var client = new RestClient(url);
-            //var request = new RestRequest("resource/{id}", Method.POST);
-            //request.AddHeader("header", "value");
-            //IRestResponse response = client.Execute(request);
+            User us = new User();
+            //var json = _Serializer.Serialize(us);
+            //var response = await Request(HttpMethod.Post, url, json, new Dictionary<string, string>());
+            //string responseText = await response.Content.ReadAsStringAsync();
+
+            //List<User> Result = _Serializer.Deserialize<List<User>>(responseText);
+
+            //Console.WriteLine(responseText);
+            //Console.ReadLine();
+        }
+
+        /*static async Task<HttpResponseMessage> Request(HttpMethod pMethod, string pUrl, string pJsonContent, Dictionary<string, string> pHeaders)
+        {
+            var httpRequestMessage = new HttpRequestMessage();
+            httpRequestMessage.Method = pMethod;
+            httpRequestMessage.RequestUri = new Uri(pUrl);
+            foreach (var head in pHeaders)
+            {
+                httpRequestMessage.Headers.Add(head.Key, head.Value);
+            }
+            switch (pMethod.Method)
+            {
+                case "POST":
+                    HttpContent httpContent = new StringContent(pJsonContent, Encoding.UTF8, "application/json");
+                    httpRequestMessage.Content = httpContent;
+                    break;
+
+            }
+
+            return await _Client.SendAsync(httpRequestMessage);
+        }*/
+
+        private void ad_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            //var responseString = "https://student.sps-prosek.cz/~sevcima14/4ITB/Insert.php".GetStringAsync();
+            /* using (var wb = new WebClient())
+             {
+                 string url = "https://student.sps-prosek.cz/~sevcima14/4ITB/Insert.php";
+                 var data = new NameValueCollection();
+                 data["name"] = "myUser";
+                 data["surname"] = "myPassword";
+
+                 var response = wb.UploadValues(url, "POST", data);
+             }
+
+             //var client = new RestClient(url);
+             //var request = new RestRequest("resource/{id}", Method.POST);
+            // request.AddHeader("header", "value");
+             //IRestResponse response = client.Execute(request);*/
             //IParser parser = new JsonParse();
-           // MistView.ItemsSource = await parser.ParseStringAsync<List<User>>(response.Content);
+            // MistView.ItemsSource = await parser.ParseStringAsync<List<User>>(response.Content);
+            MessageBox.Show("Uživatel přidán");
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
