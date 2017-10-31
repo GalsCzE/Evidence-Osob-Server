@@ -45,7 +45,10 @@ namespace Evidence_osob
 
         private void Addd_Click(object sender, RoutedEventArgs e)
         {
-
+            //_mainFrame.Navigate(new Added());
+            NavigationWindow window = new NavigationWindow();
+            window.Source = new Uri("Added.xaml", UriKind.Relative);
+            window.Show();
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)
