@@ -21,10 +21,16 @@ namespace Evidence_osob
             InitializeComponent();
         }
 
-        static async Task Run()
+        private void Run()
         {
-            string url = "https://student.sps-prosek.cz/~sevcima14/4ITB/Insert.php";
+            //string url = "https://student.sps-prosek.cz/~sevcima14/4ITB/Insert.php";
             User us = new User();
+            us.Name = jmeno.Text;
+            us.Surname = prijmeni.Text;
+            us.Birth_number = rod_cislo.Text;
+            us.Date_number = narozeni.DisplayDate;
+            us.Gender = pohlavi.Text;
+
             //var json = _Serializer.Serialize(us);
             //var response = await Request(HttpMethod.Post, url, json, new Dictionary<string, string>());
             //string responseText = await response.Content.ReadAsStringAsync();
@@ -59,7 +65,7 @@ namespace Evidence_osob
         private void ad_Click(object sender, RoutedEventArgs e)
         {
 
-
+            Run();
             //var responseString = "https://student.sps-prosek.cz/~sevcima14/4ITB/Insert.php".GetStringAsync();
             /* using (var wb = new WebClient())
              {

@@ -12,15 +12,15 @@
         <TextBox x:Name="jmeno" HorizontalAlignment="Left" Height="23" Margin="212,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="prijmeni"  HorizontalAlignment="Left" Height="23" Margin="212,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="rod_cislo" HorizontalAlignment="Left" Height="23" Margin="212,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="narozeni" HorizontalAlignment="Left" Height="23" Margin="212,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="pohlavi" HorizontalAlignment="Left" Height="23" Margin="212,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Calendar x:Name="narozeni" HorizontalAlignment="Left"  Margin="200,251,0,0"  VerticalAlignment="Top"></Calendar>
+        <TextBox x:Name="pohlavi" HorizontalAlignment="Left" Height="23" Margin="212,444,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="109,10,0,0" TextWrapping="Wrap" Text="Přidat uživatele" VerticalAlignment="Top" Height="57" Width="249" FontSize="36"/>
         <Label Content="Jméno" HorizontalAlignment="Left" Margin="25,103,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Příjemní" HorizontalAlignment="Left" Margin="25,148,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Rodné číslo" HorizontalAlignment="Left" Margin="25,195,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Datum narození" HorizontalAlignment="Left" Margin="25,237,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Pohlavíl" HorizontalAlignment="Left" Margin="25,279,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Button x:Name="ad" Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,349,0,0" Width="478" Click="ad_Click" />
-        <Button x:Name="back" Content="BACK" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,369,0,0" Width="478" Click="back_Click" />
+        <Label Content="Datum narození" HorizontalAlignment="Left" Margin="25,316,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Pohlavíl" HorizontalAlignment="Left" Margin="25,431,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="ad" Content="ADD" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,501,0,0" Width="478" Click="ad_Click" />
+        <Button x:Name="back" Content="BACK" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,521,0,0" Width="478" Click="back_Click" />
     </Grid>
 </Page>

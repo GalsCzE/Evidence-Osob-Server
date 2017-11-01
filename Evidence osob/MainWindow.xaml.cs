@@ -50,12 +50,5 @@ namespace Evidence_osob
             window.Source = new Uri("Added.xaml", UriKind.Relative);
             window.Show();
         }
-
-        private void Edit_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationWindow window = new NavigationWindow();
-            window.Source = new Uri("Edited.xaml", UriKind.Relative);
-            window.Show();
-        }
     }
 }

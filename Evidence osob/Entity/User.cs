@@ -11,7 +11,7 @@ namespace Evidence_osob.Entity
         public int ID { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public int Birth_number { get; set; }
+        public string Birth_number { get; set; }
         public DateTime Date_number { get; set; }
         public string Gender { get; set; }
 

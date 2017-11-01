@@ -9,11 +9,11 @@
       Title="Edited">
 
     <Grid Margin="0,0,222,222">
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,111,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,247,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,292,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,111,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,153,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,199,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,247,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="212,292,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="109,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="296" FontSize="36"><Run Text="Editovat "/><Run Text="uživatele"/></TextBlock>
         <Label Content="Jméno" HorizontalAlignment="Left" Margin="25,103,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Příjemní" HorizontalAlignment="Left" Margin="25,148,0,0" VerticalAlignment="Top" FontSize="20"/>
