@@ -99,5 +99,10 @@ namespace Evidence_osob
         {
 
         }
+
+        private void deli_Click(object sender, RoutedEventArgs e)
+        {
+            var client = new RestClient(""+ id_deli);
+        }
     }
 }
