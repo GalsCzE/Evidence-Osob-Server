@@ -6,6 +6,8 @@ using System.Windows;
 using System.Windows.Controls;
 using Evidence_osob.Entity;
 using System.Net.Http;
+using RestSharp;
+using Newtonsoft.Json;
 
 namespace Evidence_osob
 {
@@ -23,7 +25,7 @@ namespace Evidence_osob
 
         private void Run()
         {
-            //string url = "https://student.sps-prosek.cz/~sevcima14/4ITB/Insert.php";
+            
             User us = new User();
             us.Name = jmeno.Text;
             us.Surname = prijmeni.Text;
@@ -31,6 +33,13 @@ namespace Evidence_osob
             us.Date_number = narozeni.DisplayDate;
             us.Gender = pohlavi.Text;
 
+            string url = "https://student.sps-prosek.cz/~sevcima14/4ITB/Insert.php";
+            var client = new RestClient(url);
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("cache-contorl", "no-cache");
+            request.AddHeader("content-type", "application/json");
+            request.AddParameter("application/json", Newtonsoft.Json.JsonConvert.SerializeObject(us), ParameterType.RequestBody);
+            IRestResponse response = client.Execute(request);
             //var json = _Serializer.Serialize(us);
             //var response = await Request(HttpMethod.Post, url, json, new Dictionary<string, string>());
             //string responseText = await response.Content.ReadAsStringAsync();
